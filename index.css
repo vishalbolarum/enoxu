@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat";
+    margin: 0;
+}
+
+nav {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    height: 10vh;
+}
+
+#logo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+main {
+    height: 90vh;
+    overflow-y: hidden;
+    position: relative;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#hero {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+}
+
+#hero > div {
+    color: white;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: black;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: larger;
+    padding: .5rem;
+    &:hover {
+        opacity: .75;
+    }
+}
+
+section {
+    border-bottom: 1px solid lightgrey;
+    padding: 0 1rem;
+}
+
+div.column {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.product-image {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.split {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.split > div {
+    width: 45%;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+a.email {
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.department {
+    margin-bottom: 4rem;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .mobile-flex-wrap {
+        flex-wrap: wrap;
+    }
+}
